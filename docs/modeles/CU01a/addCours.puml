@@ -1,0 +1,26 @@
+@startuml RDCU
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title RDCU addCours(group_id : string, listeEtudiants : string[], token : string)
+participant "ControleurCours" as cc
+participant "groupeCours" as gc
+participant "groupeCours : Cours" as c
+participant "enseignant : Enseignant" as e
+
+->cc : addCours(group_id : string, listeEtudiants : string[], token : string)
+note right : selon Contrôleur
+cc->cc : enseignant = recupererEnseignantAvecToken(token : string)
+cc->cc : cours  = getInfoGroupeCours(group_id, token)
+create gc
+cc->gc : create(group_id, cours.prealables, cours.titre, cours.enseignant,\nnull, null, null)
+note right : selon Créateur\nControleurCours accède au cours
+cc->c : addEtudiant(etudiant)
+note right : selon Expert\nControleurCours accède au cours
+note left : pour chaque élément de\nlisteEtudiants, on créé un nouveau\nEtudiant et on l'ajoute au cours
+cc->e : ajoutCours(groupeCours)
+note right : selon Expert\nControleurCours accède à l'utilisateur
+@enduml

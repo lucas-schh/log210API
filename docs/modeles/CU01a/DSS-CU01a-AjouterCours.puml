@@ -1,0 +1,21 @@
+@startuml DSS
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title DSS CU01a - Ajouter cours
+
+actor ":Enseignant" as e
+participant ":Système" as s
+
+e->s : getGroupeCoursSGB(token : string)
+e<<--s : affiche la liste des groupes-cours\nqu'enseigne l'enseignant
+e->s : getInfoGroupeCours(group_id : string, token : string)
+e<<--s : informations du cours
+e->s : recupererEtudiantsGroupeCours(group_id : string, token : string)
+e<<--s : liste d'étudiants inscrits dans le groupe-cours
+e->s : addCours(group_id : string, listeEtudiants : string[], token : string)
+e<<--s : "Cours créé"
+@enduml

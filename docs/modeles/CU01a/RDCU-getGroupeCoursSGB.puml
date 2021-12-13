@@ -1,0 +1,20 @@
+@startuml RDCU
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title RDCU getGroupeCoursSGB(token : String)
+
+participant "ControleurCours" as cc
+participant "FacadeSGB" as sgb
+
+->cc : getGroupeCoursSGB(token : String)
+note right : selon Contrôleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cc->sgb : getListeSchedulesEnseignant(enseignant.id)
+note right : selon Expert\nFacadeSGB accède\naux GroupeCours du SGB
+cc<--sgb : [GroupeCours]
+@enduml

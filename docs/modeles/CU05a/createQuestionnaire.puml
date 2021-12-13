@@ -1,0 +1,23 @@
+@startuml RDCU CU05a
+skinparam style strictuml
+hide empty members
+title RDCU CU05a - createQuestionnaire(cours : Cours, nom : string, description : string, etatActif : bool)
+
+participant "ControleurQuestionnaire" as cq
+participant "utilisateur:Enseignant" as e
+participant "cours:Cours" as c
+participant "questionnaire:Questionnaire" as q
+
+->cq : createQuestionnaire(cours : Cours, nom : string, description : string, etatActif : bool, token : string)
+note right : selon Contrôleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cq->e : createQuestionnaire(cours : Cours, nom : string, description : string, etatActif : bool)
+note right : selon Expert\nControleurQuestionnaire connait\nl'utilisateur
+e->c : createQuestionnaire(cours : Cours, nom : string, description : string, etatActif : bool)
+note right : selon Créateur\nl'utilisateur contient\nles cours
+create q
+c->q : create(nom : string, description : string, etatActif : bool)
+c-->e : "Questionnaire créé"
+e-->cq : "Questionnaire créé"
+@enduml

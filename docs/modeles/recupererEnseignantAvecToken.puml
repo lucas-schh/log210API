@@ -1,0 +1,25 @@
+@startuml DiagrammeSequence
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title Diagramme de Séquence - Recuperer Enseignant Avec Token
+/'
+Ce diagramme de séquence présente la fonction recupererEnseignantAvecToken
+qui est nécessaire pour accomplir la précondition de chacun des différents
+cas d'utilisations, c'est-a-dire l'authentification par jeton de l'enseignant.
+
+Le Controleur c diffère dépendemment d'ou est appelée la fonction.
+'/
+actor ":Controleur" as c
+participant "listeEnseignant:\nMap<String,Enseignant>" as me
+
+-> c : recupererEnseignantAvecToken(token : string)
+c -> me : get(token : string)
+note right : selon Expert\nTous les controleurs ont accès\nà l'attribut listeEnseignant de l'universite
+c <<-- me : enseignant : Enseignant
+<- c : enseignant : Enseignant
+
+@enduml

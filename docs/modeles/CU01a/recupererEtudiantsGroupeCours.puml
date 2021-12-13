@@ -1,0 +1,19 @@
+@startuml RDCU
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title RDCU recupererEtudiantsGroupeCours(group_id : string, token : string)
+
+participant "ControleurCours" as cc
+participant "FacadeSGB" as sgb
+
+->cc : recupererEtudiantsGroupeCours(group_id : string, token : string)
+note right : selon Contrôleur
+cc->sgb : getLienEtudiantsGroupe()
+note right : selon Expert\nFacadeSGB accède\naux GroupeCours du SGB
+cc<<--sgb : allEtudiant : [Etudiant]
+note left : parcours tous les Etudiants\net renvoie ceux qui sont inscrits\nau group_id
+@enduml

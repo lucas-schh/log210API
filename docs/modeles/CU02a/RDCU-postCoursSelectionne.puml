@@ -1,0 +1,21 @@
+@startuml RDCU CU02a
+skinparam style strictuml
+hide empty members
+title RDCU CU02a - postCoursSelectionne(group_id : string, token : string)
+
+participant "ControleurQuestion" as cq
+participant "enseignant:\nMap<String,Cours>" as mc
+participant "cours:Cours" as c
+
+->cq : postCoursSelectionne(group_id : string, token : string)
+note right : selon Contrôleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cq->mc : get(group_id)
+note right : selon Expert\nControleurQuestion a accès\nà l'utilisateur
+mc-->>cq : cours : Cours
+cq->c : getlisteQuestion()
+note right : selon Expert\nControleurQuestion à accès\nà l'instance cours
+c-->>cq : [Question]
+note left : récupère les Questions de la map\net les mets dans une liste
+@enduml

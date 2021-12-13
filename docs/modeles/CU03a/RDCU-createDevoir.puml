@@ -1,0 +1,23 @@
+@startuml RDCU CU03a
+skinparam style strictuml
+hide empty members
+title RDCU CU03a - createDevoir(cours : Cours, nom : string, description : string, noteMaximale : int, dateDebut : string, dateFin : string, etatVisible: boolean)
+
+participant "ControleurDevoir" as cd
+participant "utilisateur:Enseignant" as e
+participant "cours:Cours" as c
+participant "devoir:Devoir" as d
+
+->cd : createDevoir(cours : Cours, nom : string, description : string, noteMaximale : int,\n dateDebut : string, dateFin : string, etatVisible: boolean, token : string)
+note right : selon Contrôleur
+cd->cd : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cd->e : createDevoir(cours : Cours, nom : string, description : string, noteMaximale : int,\n dateDebut : string, dateFin : string, etatVisible: boolean)
+note right : selon Expert\nControleurDevoir connait\nl'utilisateur
+e->c : createDevoir(cours : Cours, nom : string, description : string, noteMaximale : int,\n dateDebut : string, dateFin : string, etatVisible: boolean)
+note right : selon Créateur\nl'utilisateur contient\nles cours
+create d
+c->d : create(cours : Cours, nom : string, description : string, noteMaximale : int,\n dateDebut : string, dateFin : string, etatVisible: boolean)
+c-->e : "Devoir créé"
+e-->cd : "Devoir créé"
+@enduml

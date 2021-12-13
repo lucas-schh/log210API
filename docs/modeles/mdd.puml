@@ -1,0 +1,83 @@
+@startuml MDD
+skinparam style strictuml
+hide empty members
+title Modèle du domaine
+
+legend
+| Color      | Type  |
+|<#LightGoldenRodYellow>| Premiere Iteration  |
+|<#LightBlue>| Deuxieme Iteration  |
+|<#LightPink>| Troisieme Iteration  |
+endlegend
+
+class Université {
+  listeEtudiant : Etudiant[]
+  listeEnseignant : Map<String, Enseignant>
+}
+
+class Cours <<Contenu d'un conteneur>> {
+  id : String
+  titre : String
+  prealable : String
+  enseignant : Enseignant
+  listeEtudiant : Etudiant[]
+  listeQuestion : Map<String, Question>
+  listeQuestionnaire : Map<String, Questionnaire>
+  listeDevoir : Map<string, Devoir>
+}
+
+class Etudiant { 
+  id : String
+}
+
+class Enseignant {
+  nom : String
+  prenom : String
+  id : string
+  token: string
+  listeCours : Map<String, Cours>
+}
+
+class Question <<Contenu d'un conteneur>>{
+  type : String
+  tags : String
+  nom : String
+  enonce : String
+  verite : bool 
+  retroaction_vrai : String
+  retroaction_faux : String
+  nombreQuestionnaire : number
+}
+
+class Questionnaire {
+  nom : string
+  description : String
+  etatActif : bool
+  listeQuestion : Question[]
+  listeEtudiant : Map<number, Etudiant>
+ 'représente les étudiants qui ont fait le questionnaire
+ 'à l'aide d'une map de note qui est associé à un Etudiant
+}
+
+class Devoir {
+  nom : string;
+  description : string;
+  noteMaximale : number;
+  dateDebut : string;
+  dateFin : string;
+  etatVisible : boolean;
+  listeEtudiant : Map<number, Etudiant>
+}
+
+Université "1" -- "*" Etudiant : > contient
+Université "1" -- "*" Enseignant : > contient
+Etudiant "*" -- "1" Cours : > a
+Etudiant -- Devoir : > fait
+Enseignant "1" -- "1..*" Cours : > enseigne
+Cours "1" - "*" Question : > contient
+Cours "1" -- "*" Questionnaire : > contient
+Etudiant "1"--"*" Questionnaire : > fait
+Devoir "*"--"1" Cours : < contient
+Questionnaire "1" -- "*" Question : > contient
+
+@enduml

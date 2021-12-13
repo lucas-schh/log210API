@@ -1,0 +1,20 @@
+@startuml RDCU CU03a
+skinparam style strictuml
+hide empty members
+title RDCU CU03a - postCoursSelectionneDevoir
+
+participant "ControleurDevoir" as cd
+participant "Cours:\nMap<String,Cours>" as sc
+participant "coursSelectionne:Cours" as c
+
+->cd : postCoursSelectionneDevoir(cours: string, token : string)
+note right : selon Contrôleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cd->sc : get(coursSelectionne)
+note right : selon Expert\nControleurDevoir a accès\nà la map de cours de l'enseignant
+sc-->cd : coursSelectionne : Cours
+cd->c : getListeDevoir()
+note right : selon Expert\nControleurDevoir\na reçu le coursSelectionne
+c-->cd : [Devoir]
+@enduml

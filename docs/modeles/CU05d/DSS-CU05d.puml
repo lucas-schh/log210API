@@ -1,0 +1,18 @@
+@startuml DSS
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title DSS CU05d - Supprimer Question
+
+actor ":Enseignant" as e
+participant ":Systeme" as s
+
+e -> s: postQuestionnaireSelectionne(group_id : String, questionnaireSelectionne : String, token : string)
+note right : même fonction que dans CU05b
+e <<-- s : Questionnaire
+e -> s : supprimerQuestionnaire(group_id : string, nomQuestion : string)
+e <<-- s : "Question supprimée"
+@enduml

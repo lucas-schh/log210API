@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="304px" preserveAspectRatio="none" style="width:820px;height:304px;background:#FFFFFF;" version="1.1" viewBox="0 0 820 304" width="820px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Verdana" font-size="18" lengthAdjust="spacing" textLength="555" x="134" y="30.0967">Diagramme de Séquence - Recuperer Enseignant Avec Token</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="333.5" x2="333.5" y1="120.8906" y2="297.6865"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="518" x2="518" y1="120.8906" y2="297.6865"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="81" x="290.5" y="117.9512">:Controleur</text><ellipse cx="334" cy="50.876" fill="#FEFECE" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M334,58.876 L334,85.876 M321,66.876 L347,66.876 M334,85.876 L321,100.876 M334,85.876 L347,100.876 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" height="48.0293" style="stroke:#A80036;stroke-width:1.5;" width="190" x="423" y="71.8613"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="112" x="462" y="92.9365">listeEnseignant:</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="176" x="430" y="109.9512">Map&lt;String,Enseignant&gt;</text><polygon fill="#A80036" points="322,148.6899,332,152.6899,322,156.6899" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="0" x2="328" y1="152.6899" y2="152.6899"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="310" x="12" y="147.9604">recupererEnseignantAvecToken(token : string)</text><polygon fill="#A80036" points="506,197.2886,516,201.2886,506,205.2886" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="334" x2="512" y1="201.2886" y2="201.2886"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="124" x="364" y="196.5591">get(token : string)</text><path d="M523,165.6899 L523,222.6899 L813,222.6899 L813,175.6899 L803,165.6899 L523,165.6899 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M803,165.6899 L803,175.6899 L813,175.6899 L803,165.6899 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="81" x="529" y="183.7598">selon Expert</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="205" x="529" y="199.5591">Tous les controleurs ont accès</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="269" x="529" y="215.3584">à l'attribut listeEnseignant de l'universite</text><line style="stroke:#A80036;stroke-width:1.0;" x1="334" x2="344" y1="249.8872" y2="245.8872"/><line style="stroke:#A80036;stroke-width:1.0;" x1="334" x2="344" y1="249.8872" y2="253.8872"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="334" x2="517" y1="249.8872" y2="249.8872"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="160" x="346" y="245.1577">enseignant : Enseignant</text><polygon fill="#A80036" points="11,275.6865,1,279.6865,11,283.6865" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="5" x2="333" y1="279.6865" y2="279.6865"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="160" x="87" y="274.957">enseignant : Enseignant</text><!--MD5=[888b8381fcd27eeb5199c65b214e0e88]
+@startuml DiagrammeSequence
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title Diagramme de Séquence - Recuperer Enseignant Avec Token
+/'
+Ce diagramme de séquence présente la fonction recupererEnseignantAvecToken
+qui est nécessaire pour accomplir la précondition de chacun des différents
+cas d'utilisations, c'est-a-dire l'authentification par jeton de l'enseignant.
+
+Le Controleur c diffère dépendemment d'ou est appelée la fonction.
+'/
+actor ":Controleur" as c
+participant "listeEnseignant:\nMap<String,Enseignant>" as me
+
+-> c : recupererEnseignantAvecToken(token : string)
+c -> me : get(token : string)
+note right : selon Expert\nTous les controleurs ont accès\nà l'attribut listeEnseignant de l'universite
+c <<- - me : enseignant : Enseignant
+<- c : enseignant : Enseignant
+
+@enduml
+
+@startuml DiagrammeSequence
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title Diagramme de Séquence - Recuperer Enseignant Avec Token
+actor ":Controleur" as c
+participant "listeEnseignant:\nMap<String,Enseignant>" as me
+
+-> c : recupererEnseignantAvecToken(token : string)
+c -> me : get(token : string)
+note right : selon Expert\nTous les controleurs ont accès\nà l'attribut listeEnseignant de l'universite
+c <<- - me : enseignant : Enseignant
+<- c : enseignant : Enseignant
+
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 11:46:50 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: CA
+--></g></svg>

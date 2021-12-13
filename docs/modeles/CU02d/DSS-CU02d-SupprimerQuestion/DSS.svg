@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="310px" preserveAspectRatio="none" style="width:784px;height:310px;background:#FFFFFF;" version="1.1" viewBox="0 0 784 310" width="784px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Verdana" font-size="18" lengthAdjust="spacing" textLength="303" x="242" y="30.0967">DSS CU02d - Supprimer Question</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="249" x2="249" y1="120.8906" y2="303.6865"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="643.5" x2="643.5" y1="120.8906" y2="303.6865"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="84" x="204" y="117.9512">:Enseignant</text><ellipse cx="249" cy="50.876" fill="#FEFECE" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M249,58.876 L249,85.876 M236,66.876 L262,66.876 M249,85.876 L236,100.876 M249,85.876 L262,100.876 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" height="31.0146" style="stroke:#A80036;stroke-width:1.5;" width="81" x="603.5" y="88.876"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="67" x="610.5" y="109.9512">:Systeme</text><polygon fill="#A80036" points="632,159.5896,642,163.5896,632,167.5896" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="249" x2="638" y1="163.5896" y2="163.5896"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="282" x="305.5" y="158.8601">postCoursSelectionne(null , token : string)</text><path d="M649,135.8906 L649,176.8906 L777,176.8906 L777,145.8906 L767,135.8906 L649,135.8906 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M767,135.8906 L767,145.8906 L777,145.8906 L767,135.8906 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="97" x="655" y="153.9604">même fonction</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="107" x="655" y="169.7598">que dans CU02a</text><line style="stroke:#A80036;stroke-width:1.0;" x1="249" x2="259" y1="215.1882" y2="211.1882"/><line style="stroke:#A80036;stroke-width:1.0;" x1="249" x2="259" y1="215.1882" y2="219.1882"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="249" x2="643" y1="215.1882" y2="215.1882"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="227" x="333" y="210.4587">liste des questions de l'enseignant</text><path d="M5,187.4893 L5,228.4893 L244,228.4893 L244,197.4893 L234,187.4893 L5,187.4893 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M234,187.4893 L234,197.4893 L244,197.4893 L234,187.4893 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="218" x="11" y="205.5591">dans UI : selectionne la question</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="133" x="11" y="221.3584">et affiche son détail</text><polygon fill="#A80036" points="632,251.8872,642,255.8872,632,259.8872" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="249" x2="638" y1="255.8872" y2="255.8872"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="371" x="261" y="251.1577">supprimerQuestion(nomQuestion : string, token : string)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="249" x2="259" y1="285.6865" y2="281.6865"/><line style="stroke:#A80036;stroke-width:1.0;" x1="249" x2="259" y1="285.6865" y2="289.6865"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="249" x2="643" y1="285.6865" y2="285.6865"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="200" x="346.5" y="280.957">confirmation de la suppression</text><!--MD5=[28229092b041cc7645c28a097812c2ed]
+@startuml DSS
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title DSS CU02d - Supprimer Question
+
+actor ":Enseignant" as e
+participant ":Systeme" as s
+
+e -> s : postCoursSelectionne(null , token : string)
+note right : même fonction\nque dans CU02a
+e<<- - s : liste des questions de l'enseignant
+note left : dans UI : selectionne la question\net affiche son détail
+e -> s : supprimerQuestion(nomQuestion : string, token : string)
+e <<- - s : confirmation de la suppression
+
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 11:46:50 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: CA
+--></g></svg>

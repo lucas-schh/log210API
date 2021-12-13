@@ -1,0 +1,37 @@
+@startuml RDCU
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title RDCU CU05c - modifierQuestionnaire(group_id : string, nomQuestionnaire : string, nouveauNomQuestionnaire : string, ... (autres paramètres))
+
+participant "ControleurQuestionnaire" as cq
+participant "utilisateur:Enseignant" as u
+participant "Cours:\nMap<String,Cours>" as cm
+participant "cours:\nMap<String,Questionnaire>" as c
+participant "questionnaire:Questionnaire" as q
+
+-> cq : modifierQuestionnaire(group_id : string, nomQuestionnaire : string, nouveauNomQuestionnaire : string, ...\n(autres paramètres))
+note right : selon Controleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cq->u : modifierQuestionnaire(group_id : string, nomQuestionnaire : string, nouveauNomQuestionnaire : string, ...\n(autres paramètres))
+note right : selon Expert\nControleurQuestionnaire connait\nl'utilisateur
+u->cm : get(group_id)
+note right : selont Expert\nl'utilisateur enseigne des cours
+cm-->u : cours : Cours
+u->c : get(nomQuestionnaire)
+note right : selont Expert\nl'utilisateur enseigne des cours
+c-->u : questionnaire : Questionnaire
+opt if nouveauNomQuestionnaire != null
+u->q : setNom(nouveauNomQuestionnaire)
+note right : selon Expert\nenseignant a accès\nà l'instance de questionnaire
+end
+opt if (autres paramètres) != null
+u->q : set(autres paramètres)
+note right : selon Expert\nenseignant a accès\nà l'instance de questionnaire
+end
+u-->cq : "Questionnaire modifié"
+@enduml

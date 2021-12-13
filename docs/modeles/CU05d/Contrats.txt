@@ -1,0 +1,8 @@
+postQuestionnaireSelectionne(group_id : String, questionnaireSelectionne : String, token : string)
+postcondition:
+-Aucune
+
+
+supprimerQuestionnaire(group_id : string, nomQuestion : string)
+postcondition:
+-L'instance q de Questionnaire (dont le nomQuestion est donné en paramètre) est supprimé

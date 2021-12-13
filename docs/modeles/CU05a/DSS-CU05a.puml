@@ -1,0 +1,27 @@
+@startuml DSS
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title DSS CU05a - Ajouter Questionnaire
+
+actor ":Enseignant" as e
+participant ":Système" as s
+
+e->s : getCoursUtilisateur(token : string)
+note right : Même fonction que CU01b
+e<<--s : liste de cours \n(et le nombre de questionnaires associés a chaque cours)
+e->s : postCoursSelectionneQuestionnaire(cours: string, token : string)
+e<<--s : liste de questionnaires associé au cours
+e->s : createQuestionnaire(cours : Cours, nom : string, description : string, etatActif : bool, token : string)
+e<<--s : "Questionnaire a été créé"
+loop ajoutQuestion
+e<<--s : liste de types de questions
+e->s : postTypeQuestion(group_id : string, typeSelectionne : string, token : string)
+e<<--s : liste de questions du typeSelectionne \n(et le nombre de questionnaires associés à chaque question)
+e->s : addQuestion(cours : Cours, listeQuestions : string[], questionnaire : string, token : string)
+s-->e : "Questions ajoutées au questionnaire"
+end loop
+@enduml

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1275px" preserveAspectRatio="none" style="width:536px;height:1275px;background:#FFFFFF;" version="1.1" viewBox="0 0 536 1275" width="536px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="157" x="183.47" y="18.6855">Modèle du domaine</text><!--MD5=[10a08b655f733f3f3e8b0ffe69f4343a]
+class Université--><rect codeLine="12" fill="#FEFECE" height="60.7656" id="Université" style="stroke:#A80036;stroke-width:1.5;" width="212" x="258.94" y="29.6406"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="337.44" y="47.0977">Université</text><line style="stroke:#A80036;stroke-width:1.5;" x1="259.94" x2="469.94" y1="54.7344" y2="54.7344"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="110" x="264.94" y="70.1533">listeEtudiant : Etudiant[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="200" x="264.94" y="83.9893">listeEnseignant : Map&lt;String, Enseignant&gt;</text><!--MD5=[f6edf60997924e693a9a5571eb281b8c]
+class Cours--><rect codeLine="17" fill="#FEFECE" height="158.875" id="Cours" style="stroke:#A80036;stroke-width:1.5;" width="240" x="152.94" y="585.6406"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="145" x="200.44" y="603.0977">«Contenu d'un conteneur»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="34" x="255.94" y="618.1914">Cours</text><line style="stroke:#A80036;stroke-width:1.5;" x1="153.94" x2="391.94" y1="625.8281" y2="625.8281"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45" x="158.94" y="641.2471">id : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="158.94" y="655.083">titre : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="158.94" y="668.9189">prealable : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="158.94" y="682.7549">enseignant : Enseignant</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="110" x="158.94" y="696.5908">listeEtudiant : Etudiant[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="158.94" y="710.4268">listeQuestion : Map&lt;String, Question&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="228" x="158.94" y="724.2627">listeQuestionnaire : Map&lt;String, Questionnaire&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="158.94" y="738.0986">listeDevoir : Map&lt;string, Devoir&gt;</text><!--MD5=[f84e857de5a9ca5678aed72e3e98d0a5]
+class Etudiant--><rect codeLine="28" fill="#FEFECE" height="46.9297" id="Etudiant" style="stroke:#A80036;stroke-width:1.5;" width="57" x="202.44" y="168.6406"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="45" x="208.44" y="186.0977">Etudiant</text><line style="stroke:#A80036;stroke-width:1.5;" x1="203.44" x2="258.44" y1="193.7344" y2="193.7344"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45" x="208.44" y="209.1533">id : String</text><!--MD5=[0ea76b077f2fe2b0557d144a0cdb3724]
+class Enseignant--><rect codeLine="32" fill="#FEFECE" height="102.2734" id="Enseignant" style="stroke:#A80036;stroke-width:1.5;" width="164" x="365.94" y="245.6406"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="63" x="416.44" y="263.0977">Enseignant</text><line style="stroke:#A80036;stroke-width:1.5;" x1="366.94" x2="528.94" y1="270.7344" y2="270.7344"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="371.94" y="286.1533">nom : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="371.94" y="299.9893">prenom : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="44" x="371.94" y="313.8252">id : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="371.94" y="327.6611">token: string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="152" x="371.94" y="341.4971">listeCours : Map&lt;String, Cours&gt;</text><!--MD5=[fc7123defb831ecdd44b2d9bcef6cceb]
+class Question--><rect codeLine="40" fill="#FEFECE" height="158.875" id="Question" style="stroke:#A80036;stroke-width:1.5;" width="160" x="110.94" y="1002.6406"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="145" x="118.44" y="1020.0977">«Contenu d'un conteneur»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="50" x="165.94" y="1035.1914">Question</text><line style="stroke:#A80036;stroke-width:1.5;" x1="111.94" x2="269.94" y1="1042.8281" y2="1042.8281"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="116.94" y="1058.2471">type : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="116.94" y="1072.083">tags : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="116.94" y="1085.9189">nom : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="116.94" y="1099.7549">enonce : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="116.94" y="1113.5908">verite : bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="116.94" y="1127.4268">retroaction_vrai : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="116.94" y="1141.2627">retroaction_faux : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="116.94" y="1155.0986">nombreQuestionnaire : number</text><!--MD5=[5a3b85c54cc1c79904e0b827443986bf]
+class Questionnaire--><rect codeLine="51" fill="#FEFECE" height="102.2734" id="Questionnaire" style="stroke:#A80036;stroke-width:1.5;" width="190" x="12.94" y="822.6406"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="78" x="68.94" y="840.0977">Questionnaire</text><line style="stroke:#A80036;stroke-width:1.5;" x1="13.94" x2="201.94" y1="847.7344" y2="847.7344"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="18.94" y="863.1533">nom : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="18.94" y="876.9893">description : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="70" x="18.94" y="890.8252">etatActif : bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="18.94" y="904.6611">listeQuestion : Question[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="178" x="18.94" y="918.4971">listeEtudiant : Map&lt;number, Etudiant&gt;</text><!--MD5=[54a5e0e6ed87cf29c8834e8f40ab0f5d]
+class Devoir--><rect codeLine="61" fill="#FEFECE" height="129.9453" id="Devoir" style="stroke:#A80036;stroke-width:1.5;" width="190" x="82.94" y="377.6406"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="35" x="160.44" y="395.0977">Devoir</text><line style="stroke:#A80036;stroke-width:1.5;" x1="83.94" x2="271.94" y1="402.7344" y2="402.7344"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="88.94" y="418.1533">nom : string;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="88.94" y="431.9893">description : string;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="88.94" y="445.8252">noteMaximale : number;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="88" x="88.94" y="459.6611">dateDebut : string;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="88.94" y="473.4971">dateFin : string;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="88.94" y="487.333">etatVisible : boolean;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="178" x="88.94" y="501.1689">listeEtudiant : Map&lt;number, Etudiant&gt;</text><!--MD5=[5217f6319e60196188b9b46941152dbc]
+link Université to Etudiant--><path codeLine="71" d="M334.2,90.9606 C309.94,114.5006 276.6,146.8506 254.44,168.3406 " fill="none" id="Université-Etudiant" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="303.3513,133.298,311.8897,129.1091,307.7969,124.8904,303.3513,133.298" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="315.94" y="135.1357">contient</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="320.673" y="111.9117">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="254.8213" y="157.741">*</text><!--MD5=[e696a511ab66ff85cf29965a3cb732fe]
+link Université to Enseignant--><path codeLine="72" d="M375.45,90.8406 C389.19,129.6606 413.46,198.2306 430.11,245.2606 " fill="none" id="Université-Enseignant" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="396.6084,134.5298,396.3607,125.0225,390.8197,126.9838,396.6084,134.5298" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="403.94" y="135.1357">contient</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="369.8301" y="112.0125">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="422.3782" y="234.7818">*</text><!--MD5=[cd8e98f39938c1b1a71ca8144437a8dd]
+link Etudiant to Cours--><path codeLine="73" d="M245.24,215.7306 C250.47,224.7606 256.05,235.4206 259.94,245.6406 C309.31,375.2106 308.79,417.6806 294.94,555.6406 C293.96,565.3906 292.5,575.5706 290.79,585.6106 " fill="none" id="Etudiant-Cours" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="308.5511,447.7789,310.3625,438.4424,304.5287,439.1609,308.5511,447.7789" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="316.94" y="448.1357">a</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="243.1163" y="236.9772">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="285.1577" y="574.7858">1</text><!--MD5=[a6c216b976b858ea58408f759eecdae3]
+link Etudiant to Devoir--><path codeLine="74" d="M226.05,216.0706 C218.3,252.4206 202.91,324.5606 191.62,377.5006 " fill="none" id="Etudiant-Devoir" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="223.8971,301.7064,228.658,293.4733,222.9095,292.2473,223.8971,301.7064" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="17" x="233.94" y="302.1357">fait</text><!--MD5=[64daa3b009af15a3eb127ab4aaeac76b]
+link Enseignant to Cours--><path codeLine="75" d="M439.22,347.6906 C428.35,401.5906 406.49,488.6206 368.94,555.6406 C363.22,565.8406 356.42,575.9206 349.1,585.5806 " fill="none" id="Enseignant-Cours" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="435.1687,447.4921,441.1213,440.0748,435.6247,437.9925,435.1687,447.4921" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="445.94" y="448.1357">enseigne</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="430.5016" y="369.4951">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="335.4059" y="574.7529">1..*</text><!--MD5=[30ef281050350a93815a07ea9852e5f4]
+link Cours to Question--><path codeLine="76" d="M259.91,744.8206 C249.31,806.8906 233.45,895.5506 216.94,972.6406 C214.87,982.3006 212.6,992.4206 210.28,1002.4306 " fill="none" id="Cours-Question" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="250.9941,878.7261,255.5911,870.4003,249.8194,869.2884,250.9941,878.7261" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="260.94" y="879.1357">contient</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="251.4378" y="766.146">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="206.8324" y="991.8619">*</text><!--MD5=[d0455b5e92030552e43ec2b02a19a8a2]
+link Cours to Questionnaire--><path codeLine="77" d="M209.71,744.9306 C201.7,754.9306 193.63,765.0206 185.94,774.6406 C173.52,790.1906 160.02,807.1406 147.79,822.5106 " fill="none" id="Cours-Questionnaire" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="187.8209,787.7243,195.7604,782.4882,191.1664,778.8215,187.8209,787.7243" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="199.94" y="789.1357">contient</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="196.9754" y="765.9907">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="148.0423" y="811.6961">*</text><!--MD5=[623b767a476b1368624eee750b6ee181]
+link Etudiant to Questionnaire--><path codeLine="78" d="M202.42,213.6306 C162.72,244.1206 92.57,305.6306 64.94,377.6406 C6,531.2706 58.77,730.7806 89.5,822.5006 " fill="none" id="Etudiant-Questionnaire" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="43.0283,551.7326,47.5673,543.3751,41.788,542.3032,43.0283,551.7326" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="17" x="52.94" y="552.1357">fait</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="187.6151" y="214.4653">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="81.5553" y="811.6847">*</text><!--MD5=[11b73ae7a4faa5709f85273d5a3e99ad]
+link Devoir to Cours--><path codeLine="79" d="M205.55,507.7106 C216.01,532.0006 228.04,559.9406 239.02,585.4206 " fill="none" id="Devoir-Cours" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="228.9621,542.2242,229.8409,551.6941,235.2393,549.369,228.9621,542.2242" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="239.94" y="552.1357">contient</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="203.2964" y="529.22">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="228.5703" y="574.851">1</text><!--MD5=[d99a8c8e2f040432a664dac4ac75f7f7]
+link Questionnaire to Question--><path codeLine="80" d="M128.14,924.8906 C137.49,948.1706 148.83,976.3806 159.29,1002.3906 " fill="none" id="Questionnaire-Question" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="154.8047,968.4557,154.1583,958.9671,148.7045,961.1592,154.8047,968.4557" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="161.94" y="969.1357">contient</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="123.3841" y="946.3527">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="151.1418" y="991.8183">*</text><rect fill="#DDDDDD" height="84.4375" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="203" x="159.97" y="1175.5156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="169.97" y="1197.0488">Color</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="231.97" y="1197.0488">Type</text><rect fill="#FAFAD2" height="17.6094" style="stroke:none;stroke-width:1.0;" width="62" x="165.97" y="1200.125"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="169.97" y="1214.6582"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="231.97" y="1214.6582">Premiere Iteration</text><rect fill="#ADD8E6" height="17.6094" style="stroke:none;stroke-width:1.0;" width="62" x="165.97" y="1217.7344"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="169.97" y="1232.2676"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="231.97" y="1232.2676">Deuxieme Iteration</text><rect fill="#FFB6C1" height="17.6094" style="stroke:none;stroke-width:1.0;" width="62" x="165.97" y="1235.3438"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="169.97" y="1249.877"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="231.97" y="1249.877">Troisieme Iteration</text><line style="stroke:#000000;stroke-width:1.0;" x1="165.97" x2="356.97" y1="1182.5156" y2="1182.5156"/><line style="stroke:#000000;stroke-width:1.0;" x1="165.97" x2="356.97" y1="1200.125" y2="1200.125"/><line style="stroke:#000000;stroke-width:1.0;" x1="165.97" x2="356.97" y1="1217.7344" y2="1217.7344"/><line style="stroke:#000000;stroke-width:1.0;" x1="165.97" x2="356.97" y1="1235.3438" y2="1235.3438"/><line style="stroke:#000000;stroke-width:1.0;" x1="165.97" x2="356.97" y1="1252.9531" y2="1252.9531"/><line style="stroke:#000000;stroke-width:1.0;" x1="165.97" x2="165.97" y1="1182.5156" y2="1252.9531"/><line style="stroke:#000000;stroke-width:1.0;" x1="227.97" x2="227.97" y1="1182.5156" y2="1252.9531"/><line style="stroke:#000000;stroke-width:1.0;" x1="356.97" x2="356.97" y1="1182.5156" y2="1252.9531"/><!--MD5=[66f16b842e49ad52bd204a145e778d5c]
+@startuml MDD
+skinparam style strictuml
+hide empty members
+title Modèle du domaine
+
+legend
+| Color      | Type  |
+|<#LightGoldenRodYellow>| Premiere Iteration  |
+|<#LightBlue>| Deuxieme Iteration  |
+|<#LightPink>| Troisieme Iteration  |
+endlegend
+
+class Université {
+  listeEtudiant : Etudiant[]
+  listeEnseignant : Map<String, Enseignant>
+}
+
+class Cours <<Contenu d'un conteneur>> {
+  id : String
+  titre : String
+  prealable : String
+  enseignant : Enseignant
+  listeEtudiant : Etudiant[]
+  listeQuestion : Map<String, Question>
+  listeQuestionnaire : Map<String, Questionnaire>
+  listeDevoir : Map<string, Devoir>
+}
+
+class Etudiant { 
+  id : String
+}
+
+class Enseignant {
+  nom : String
+  prenom : String
+  id : string
+  token: string
+  listeCours : Map<String, Cours>
+}
+
+class Question <<Contenu d'un conteneur>>{
+  type : String
+  tags : String
+  nom : String
+  enonce : String
+  verite : bool 
+  retroaction_vrai : String
+  retroaction_faux : String
+  nombreQuestionnaire : number
+}
+
+class Questionnaire {
+  nom : string
+  description : String
+  etatActif : bool
+  listeQuestion : Question[]
+  listeEtudiant : Map<number, Etudiant>
+ 'représente les étudiants qui ont fait le questionnaire
+ 'à l'aide d'une map de note qui est associé à un Etudiant
+}
+
+class Devoir {
+  nom : string;
+  description : string;
+  noteMaximale : number;
+  dateDebut : string;
+  dateFin : string;
+  etatVisible : boolean;
+  listeEtudiant : Map<number, Etudiant>
+}
+
+Université "1" - - "*" Etudiant : > contient
+Université "1" - - "*" Enseignant : > contient
+Etudiant "*" - - "1" Cours : > a
+Etudiant - - Devoir : > fait
+Enseignant "1" - - "1..*" Cours : > enseigne
+Cours "1" - "*" Question : > contient
+Cours "1" - - "*" Questionnaire : > contient
+Etudiant "1"- -"*" Questionnaire : > fait
+Devoir "*"- -"1" Cours : < contient
+Questionnaire "1" - - "*" Question : > contient
+
+@enduml
+
+@startuml MDD
+skinparam style strictuml
+hide empty members
+title Modèle du domaine
+
+legend
+| Color      | Type  |
+|<#LightGoldenRodYellow>| Premiere Iteration  |
+|<#LightBlue>| Deuxieme Iteration  |
+|<#LightPink>| Troisieme Iteration  |
+endlegend
+
+class Université {
+  listeEtudiant : Etudiant[]
+  listeEnseignant : Map<String, Enseignant>
+}
+
+class Cours <<Contenu d'un conteneur>> {
+  id : String
+  titre : String
+  prealable : String
+  enseignant : Enseignant
+  listeEtudiant : Etudiant[]
+  listeQuestion : Map<String, Question>
+  listeQuestionnaire : Map<String, Questionnaire>
+  listeDevoir : Map<string, Devoir>
+}
+
+class Etudiant { 
+  id : String
+}
+
+class Enseignant {
+  nom : String
+  prenom : String
+  id : string
+  token: string
+  listeCours : Map<String, Cours>
+}
+
+class Question <<Contenu d'un conteneur>>{
+  type : String
+  tags : String
+  nom : String
+  enonce : String
+  verite : bool 
+  retroaction_vrai : String
+  retroaction_faux : String
+  nombreQuestionnaire : number
+}
+
+class Questionnaire {
+  nom : string
+  description : String
+  etatActif : bool
+  listeQuestion : Question[]
+  listeEtudiant : Map<number, Etudiant>
+}
+
+class Devoir {
+  nom : string;
+  description : string;
+  noteMaximale : number;
+  dateDebut : string;
+  dateFin : string;
+  etatVisible : boolean;
+  listeEtudiant : Map<number, Etudiant>
+}
+
+Université "1" - - "*" Etudiant : > contient
+Université "1" - - "*" Enseignant : > contient
+Etudiant "*" - - "1" Cours : > a
+Etudiant - - Devoir : > fait
+Enseignant "1" - - "1..*" Cours : > enseigne
+Cours "1" - "*" Question : > contient
+Cours "1" - - "*" Questionnaire : > contient
+Etudiant "1"- -"*" Questionnaire : > fait
+Devoir "*"- -"1" Cours : < contient
+Questionnaire "1" - - "*" Question : > contient
+
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 11:46:50 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: CA
+--></g></svg>

@@ -1,0 +1,25 @@
+@startuml RDCU CU05a
+skinparam style strictuml
+hide empty members
+title RDCU CU05a - postTypeQuestion(group_id : string, typeSelectionne : string)
+
+participant "ControleurQuestionnaire" as cqq
+participant "utilisateur:Enseignant" as u
+participant "Cours:\nMap<String,Cours>" as sc
+participant "cours:Cours" as c
+
+->cqq : postTypeQuestion(group_id : string, typeSelectionne : string, token : string)
+note right : selon Contrôleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cqq->u : getListeQuestion(group_id : string, typeSelectionne : string)
+note right : selon Expert\nControleurQuestionnaire connait\nl'utilisateur
+u->sc : get(group_id : string)
+note right : selon Expert\nenseignant a accès\naux cours qui\ncontiennent les maps
+sc-->u : cours : Cours
+u->c : getListeQuestion()
+note right : selon Expert\nenseignant a accès\naux cours
+c-->u : [Question]
+note left : appelle la fonction\net tri les questions pour garder\nceux du type souhaité
+u-->cqq : [Question]
+@enduml

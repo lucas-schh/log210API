@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="370px" preserveAspectRatio="none" style="width:929px;height:370px;background:#FFFFFF;" version="1.1" viewBox="0 0 929 370" width="929px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Verdana" font-size="18" lengthAdjust="spacing" textLength="320" x="306" y="30.0967">DSS CU05b - Ajouter Questionnaire</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="50" x2="50" y1="120.8906" y2="363.2852"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="722.5" x2="722.5" y1="120.8906" y2="363.2852"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="84" x="5" y="117.9512">:Enseignant</text><ellipse cx="50" cy="50.876" fill="#FEFECE" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M50,58.876 L50,85.876 M37,66.876 L63,66.876 M50,85.876 L37,100.876 M50,85.876 L63,100.876 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" height="31.0146" style="stroke:#A80036;stroke-width:1.5;" width="81" x="682.5" y="88.876"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="67" x="689.5" y="109.9512">:Système</text><polygon fill="#A80036" points="711,151.6899,721,155.6899,711,159.6899" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="717" y1="155.6899" y2="155.6899"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="227" x="273" y="150.9604">getCoursUtilisateur(token : string)</text><path d="M728,135.8906 L728,160.8906 L922,160.8906 L922,145.8906 L912,135.8906 L728,135.8906 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M912,135.8906 L912,145.8906 L922,145.8906 L912,135.8906 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="173" x="734" y="153.9604">Même fonction que CU01b</text><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="204.2886" y2="200.2886"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="204.2886" y2="208.2886"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="50" x2="722" y1="204.2886" y2="204.2886"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="89" x="339.5" y="183.7598">liste de cours</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="384" x="194.5" y="199.5591">(et le nombre de questionnaires associés a chaque cours)</text><polygon fill="#A80036" points="711,233.0879,721,237.0879,711,241.0879" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="717" y1="237.0879" y2="237.0879"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="449" x="162" y="232.3584">postCoursSelectionneQuestionnaire(group_id: string, token : string)</text><path d="M728,217.2886 L728,242.2886 L922,242.2886 L922,227.2886 L912,217.2886 L728,217.2886 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M912,217.2886 L912,227.2886 L922,227.2886 L912,217.2886 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="173" x="734" y="235.3584">Même fonction que CU05a</text><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="269.8872" y2="265.8872"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="269.8872" y2="273.8872"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="50" x2="722" y1="269.8872" y2="269.8872"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="264" x="254.5" y="265.1577">liste de questionnaires associé au cours</text><polygon fill="#A80036" points="711,295.6865,721,299.6865,711,303.6865" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="717" y1="299.6865" y2="299.6865"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="649" x="62" y="294.957">postQuestionnaireSelectionne(group_id : String, questionnaireSelectionne : String, token : string)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="345.2852" y2="341.2852"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="345.2852" y2="349.2852"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="50" x2="722" y1="345.2852" y2="345.2852"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="165" x="304" y="324.7563">questionnaireSelectionne</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="437" x="168" y="340.5557">(affiche le détail et la liste d'étudiant qui l'ont fait avec leur note)</text><!--MD5=[cd5ee1cb1777df2d0d67439b84a9515e]
+@startuml DSS
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title DSS CU05b - Ajouter Questionnaire
+
+actor ":Enseignant" as e
+participant ":Système" as s
+
+e->s : getCoursUtilisateur(token : string)
+note right : Même fonction que CU01b
+e<<- -s : liste de cours \n(et le nombre de questionnaires associés a chaque cours)
+e->s : postCoursSelectionneQuestionnaire(group_id: string, token : string)
+note right : Même fonction que CU05a
+e<<- -s : liste de questionnaires associé au cours
+e -> s : postQuestionnaireSelectionne(group_id : String, questionnaireSelectionne : String, token : string)
+e<<- - s : questionnaireSelectionne\n(affiche le détail et la liste d'étudiant qui l'ont fait avec leur note)
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 11:46:50 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: CA
+--></g></svg>

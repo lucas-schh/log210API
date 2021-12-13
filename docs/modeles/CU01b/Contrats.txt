@@ -1,0 +1,3 @@
+getCoursUtilisateur(token : string)
+Postconditions:
+-aucun

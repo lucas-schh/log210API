@@ -1,0 +1,3 @@
+deleteCoursChoisi(group_id : string, token : string)
+Postconditions:
+-L'instance de cours c (correspondant au group_id) a été supprimée

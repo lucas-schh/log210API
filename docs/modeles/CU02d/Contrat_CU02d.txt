@@ -1,0 +1,3 @@
+supprimerQuestion(nomQuestion : string, token : string)
+Postconditions :
+-L'instance nomQuestion de Question a été supprimée de la banque pour le cours

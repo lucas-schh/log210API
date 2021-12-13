@@ -1,0 +1,24 @@
+@startuml RDCU
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title RDCU CU02d - supprimerQuestion(nomQuestion : string, token : string)
+
+participant "ControleurQuestion" as cq
+participant "enseignant:Enseignant" as e
+participant "listeCours:\nMap<String,Question>" as mq
+
+->cq : supprimerQuestion(nomQuestion : string, token : string)
+note right : selon Contrôleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cq->e : getlisteCours()
+note right : selon Expert\nControleurQuestion a accès\nà l'utilisateur
+e-->>cq : listeCours : [Cours]
+cq->mq : delete(nomQuestion)
+note right : selon Expert\nControleurQuestion a accès\nà l'attribut listeCours de l'enseignant
+note left : appelle la fonction\nsur chaque cours de la liste
+@enduml

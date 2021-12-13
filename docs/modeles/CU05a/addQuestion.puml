@@ -1,0 +1,28 @@
+@startuml RDCU CU05a
+skinparam style strictuml
+hide empty members
+title RDCU CU05a - addQuestion(listeQuestions : string[], questionnaire : string)
+
+participant "ControleurQuestionnaire" as cq
+participant "utilisateur:Enseignant" as e
+participant "cours:\nMap<String,Question>" as mq
+participant "cours:\nMap<String,Questionnaire>" as mqu
+participant "questionnaire:Questionnaire" as q
+
+->cq : addQuestion(listeQuestions : string[], questionnaire : string, token : string)
+note right : selon Contrôleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cq->e : addQuestion(listeQuestions : string[], questionnaire : string)
+note right : selon Expert\nControleurQuestionnaire possède\nles enseignants
+e->mq : get(listeQuestions : string[])
+note right : selon Expert\nenseignant a accès\naux cours qui\ncontiennent les maps
+mq-->e : listeQuestions : [Question]
+e->mqu : get(questionnaire)
+note right : selon Expert\nenseignant a accès\naux cours qui\ncontiennent les maps
+mqu-->e : questionnaire : Questionnaire
+e->q : addQuestion(listeQuestions)
+note right : selon Expert\nenseignant a accès\nà l'instance de questionnaire
+q-->e : "Questions ajoutées au questionnaire"
+e-->cq : "Questions ajoutées au questionnaire"
+@enduml

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="361px" preserveAspectRatio="none" style="width:539px;height:361px;background:#FFFFFF;" version="1.1" viewBox="0 0 539 361" width="539px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="120" x="209" y="28.708">RDCU CU01b</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="281.5" x2="281.5" y1="87.5469" y2="354.875"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="456" x2="456" y1="87.5469" y2="354.875"/><rect fill="#FEFECE" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="131" x="216.5" y="56.25"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="223.5" y="76.2451">ControleurCours</text><rect fill="#FEFECE" height="46.5938" style="stroke:#A80036;stroke-width:1.5;" width="154" x="379" y="39.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="433.5" y="59.9482">Cours:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="386" y="76.2451">Map&lt;String,Cours&gt;</text><polygon fill="#A80036" points="270,114.6797,280,118.6797,270,122.6797" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="0" x2="276" y1="118.6797" y2="118.6797"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="258" x="7" y="113.6138">getInformationCours(nomCours : String)</text><path d="M287,131.6797 L287,186.6797 L454,186.6797 L454,141.6797 L444,131.6797 L287,131.6797 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M444,131.6797 L444,141.6797 L454,141.6797 L444,131.6797 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="293" y="148.7466">selon Expert</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="293" y="163.8794">ControleurCours</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="293" y="179.0122">contient/gère les cours</text><polygon fill="#A80036" points="444,209.2109,454,213.2109,444,217.2109" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="282" x2="450" y1="213.2109" y2="213.2109"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="150" x="289" y="208.145">cours = get(nomCours)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="282" x2="292" y1="242.3438" y2="238.3438"/><line style="stroke:#A80036;stroke-width:1.0;" x1="282" x2="292" y1="242.3438" y2="246.3438"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="282" x2="455" y1="242.3438" y2="242.3438"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="299" y="237.2778">Cours</text><path d="M287,255.3438 L287,310.3438 L454,310.3438 L454,265.3438 L444,255.3438 L287,255.3438 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M444,255.3438 L444,265.3438 L454,265.3438 L444,255.3438 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="293" y="272.4106">selon Expert</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="293" y="287.5435">ControleurCours</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="293" y="302.6763">contient/gère les cours</text><line style="stroke:#A80036;stroke-width:1.0;" x1="0" x2="10" y1="336.875" y2="332.875"/><line style="stroke:#A80036;stroke-width:1.0;" x1="0" x2="10" y1="336.875" y2="340.875"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="0" x2="281" y1="336.875" y2="336.875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="17" y="331.8091">description du cours</text><!--MD5=[5e1287d5ab8f7015245faed4187c316c]
+@startuml
+skinparam style strictuml
+hide empty members
+title RDCU CU01b
+
+participant "ControleurCours" as rc
+participant "Cours:\nMap<String,Cours>" as cm
+
+[-> rc : getInformationCours(nomCours : String)
+note right of rc
+selon Expert
+ControleurCours 
+contient/gère les cours
+end note
+rc -> cm : cours = get(nomCours)
+rc <<- - cm : Cours
+note right of rc
+selon Expert
+ControleurCours 
+contient/gère les cours
+end note
+[<<- - rc : description du cours
+@enduml
+
+PlantUML version 1.2021.12(Tue Oct 05 16:01:58 UTC 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

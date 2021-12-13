@@ -1,0 +1,19 @@
+@startuml DSS
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title DSS CU02c - Modifier question
+
+actor ":Enseignant" as e 
+participant ":Systeme" as s 
+
+e -> s : postCoursSelectionne(null , token : string)
+note right : même fonction\nque dans CU02a
+e<<-- s : liste des questions de l'enseignant
+note left : dans UI : selectionne la question\net affiche son détail
+e -> s : modifierQuestion(questionOriginale : string,type:string,tags:string ... (autres paramètres))
+e <<-- s : Question
+@enduml

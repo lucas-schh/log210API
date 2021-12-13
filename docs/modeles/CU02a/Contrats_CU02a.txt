@@ -1,0 +1,7 @@
+postCoursSelectionne(group_id : string, token : string)
+    Post conditions:
+        -aucune
+
+setQuestion(group_id:string,type:string,tags:string,nom:string,enonce:string,verite:boolean,retroaction_reponse_vrai:string,retroaction_reponse_fausse:string, token : string)
+    Post conditions:
+        -Une instance q de Question a été créée dans la banque pour le cours.

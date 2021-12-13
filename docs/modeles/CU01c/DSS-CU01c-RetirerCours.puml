@@ -1,0 +1,19 @@
+@startuml DSS
+
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+title DSS CU01c - Retirer cours
+
+actor ":Enseignant" as e
+participant ":Système" as s
+
+e->s : getCoursUtilisateur(token : string)
+note right : même fonction\nque dans CU01b
+e<<--s : liste des cours de l'enseignant
+note left : dans UI : selectionne le cours\net affiche son détail et sa liste d'étudiants
+e->s : deleteCoursChoisi(group_id : string, token : string)
+e<<--s : cours supprimé et liste\n des cours de l'enseignant
+@enduml

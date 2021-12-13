@@ -1,0 +1,18 @@
+@startuml DSS
+skinparam style strictuml
+hide empty members
+title DSS CU03a - Ajouter Devoir
+
+actor ":Enseignant" as e
+participant ":Systeme" as s
+
+e -> s : getListeNomsCours(enseignant : string)
+note right : Même fonction que CU01b
+e <<-- s : liste des cours actifs de l'enseignant\n(et le nombre de devoirs associés a chaque cours)
+e -> s : postCoursSelectionneDevoir(cours : string, token : string)
+e <<-- s : liste de devoirs associé au cours
+loop nouveauDevoir
+e -> s : createDevoir(cours : Cours, nom : string, description : string, noteMaximale : int,\n dateDebut : string, dateFin : string, etatVisible: boolean, token : string)
+e <<-- s : "Devoir a été créé" et liste de devoirs associé au cours
+end loop
+@enduml

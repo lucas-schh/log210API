@@ -1,0 +1,83 @@
+
+doctype html
+html
+  head
+    title #{title}
+
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //- Bootstrap nécessite le chargement dans cet ordre
+    script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer)
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer)
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js' integrity='sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF' crossorigin='anonymous')
+
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+
+
+    #ajouterQuestion
+        h1 Ajouter une question
+        .dropdown
+        // https://getbootstrap.com/docs/5.0/components/buttons/
+        button#dropdownAjouterQuestion.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            | Choisir un cours
+        // https://getbootstrap.com/docs/5.0/components/dropdowns/
+        ul#listeGroupeCoursAjoutQuestion.dropdown-menu(aria-labelledby='dropdownMenuButtonAjouterQuestion')
+        h4#coursSelectionne
+        // https://getbootstrap.com/docs/5.0/content/tables/
+        table#tableQuestions.table
+            thead
+                tr
+                    th(scope='col') #
+                    th(scope='col') Question
+            tbody#tableBodyQuestion
+                tr
+                    th(scope='row') 1
+                    td Comment est il possible de ...
+                tr
+                    th(scope='row') 2
+                    td Pourquoi ...
+                tr
+                    th(scope='row') 3
+                    td Dans quel ...
+
+
+
+        input#inputNomQuestion.form-control(type='question')
+        .form-text Veuillez entrer le nom de la question
+        input#inputNouvelleQuestion.form-control(type='question')
+        .form-text Veuillez &eacute;crire votre question
+        input#inputTagsQuestion.form-control(type='question')
+        .form-text Veuillez rajouter les tags, s&eacute;par&eacute;s par des virgules
+        h5 Veuillez choisir la r&eacute;ponse
+        // https://getbootstrap.com/docs/5.0/components/button-group/#checkbox-and-radio-button-groups
+        .btn-group(role='group' aria-label='Basic radio toggle button group')
+            input#btnradioVrai.btn-check(type='radio' name='btnradio' autocomplete='off' checked value="Vrai") 
+            label.btn.btn-outline-primary(for='btnradioVrai') Vrai
+            input#btnradioFaux.btn-check(type='radio' name='btnradio' autocomplete='off' value="Faux")
+            label.btn.btn-outline-primary(for='btnradioFaux') Faux
+
+
+        // https://getbootstrap.com/docs/5.0/forms/overview/#form-texts
+        input#inputRetroactionPositive.form-control(type='question')
+        .form-text Veuillez rajouter une r&eacute;troaction pour la bonne r&eacute;ponse
+        // https://getbootstrap.com/docs/5.0/forms/overview/#form-text
+        input#inputRetroactionNegative.form-control(type='question')
+        .form-text Veuillez rajouter une r&eacute;troaction pour la mauvaise r&eacute;ponse
+        button#btnAjouterQuestion.btn.btn-primary(type='button') Ajouter la question
+
+        #modalConfirmationAjouterQuestion.modal.fade(tabindex='-1' aria-labelledby='modalConfirmationAjouterQuestion' aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-body La question a ete ajoute
+                    .modal-footer
+                        // https://getbootstrap.com/docs/5.0/components/buttons/
+                        button#buttonClose.btn.btn-primary(type='button' data-bs-dismiss='modal') Ferme
+
+
+script(src="/lib/casAjouterQuestion.js" type="text/javascript") 

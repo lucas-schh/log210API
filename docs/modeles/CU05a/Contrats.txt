@@ -1,0 +1,19 @@
+getCoursUtilisateur(token : string)
+postcondition:
+-Aucune 
+
+postCoursSelectionneQuestionnaire(cours: string, token : string)
+postcondition:
+-Aucune
+
+createQuestionnaire(cours : Cours, nom : string, description : string, etatActif : bool, token : string)
+postcondition: 
+-Une instance q de questionnaire a été créé
+
+postTypeQuestion(group_id : string, typeSelectionne : string, token : string)
+postcondition:
+-Aucune
+
+addQuestion(cours : Cours, listeQuestions : string[], questionnaire : string, token : string)
+postcondition:
+-Les questions de la listeQuestions sont associés au questionnaire q

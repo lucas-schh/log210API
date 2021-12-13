@@ -1,0 +1,11 @@
+getCoursUtilisateur(token : string)
+postcondition:
+-Aucune 
+
+postCoursSelectionneQuestionnaire(cours: string, token : string)
+postcondition:
+-Aucune
+
+postQuestionnaireSelectionne(group_id : String, questionnaireSelectionne : String, token : string)
+postcondition:
+-Aucune

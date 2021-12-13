@@ -1,0 +1,3 @@
+modifierQuestion(questionOriginale : string,type:string,tags:string ... (autres paramètres))
+Postconditions :
+-L'instance questionOriginale de Question a été modifié dans la banque pour le cours.

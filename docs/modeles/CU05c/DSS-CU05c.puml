@@ -1,0 +1,18 @@
+@startuml DSS
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title DSS CU05c - Modifier Questionnaire
+
+actor ":Enseignant" as e
+participant ":Système" as s
+
+e -> s : postQuestionnaireSelectionne(group_id : String, questionnaireSelectionne : String, token : string)
+note right : même fonction que dans CU05b
+e <<-- s : Questionnaire\n(Affiche l'attribut listeQuestion)
+e -> s : modifierQuestionnaire(group_id : string, nomQuestionnaire : string, nouveauNomQuestionnaire : string, ... (autres paramètres))
+e <<-- s : "Questionnaire modifié"
+@enduml

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="275px" preserveAspectRatio="none" style="width:1203px;height:275px;background:#FFFFFF;" version="1.1" viewBox="0 0 1203 275" width="1203px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Verdana" font-size="18" lengthAdjust="spacing" textLength="385" x="410.75" y="30.0967">RDCU getGroupeCoursSGB(token : String)</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="258.5" x2="258.5" y1="72.8906" y2="268.6865"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="574.5" x2="574.5" y1="72.8906" y2="268.6865"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="646.5" x2="646.5" y1="72.8906" y2="268.6865"/><rect fill="#FEFECE" height="31.0146" style="stroke:#A80036;stroke-width:1.5;" width="131" x="193.5" y="40.876"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="117" x="200.5" y="61.9512">ControleurCours</text><rect fill="#FEFECE" height="31.0146" style="stroke:#A80036;stroke-width:1.5;" width="93" x="528.5" y="40.876"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="535.5" y="61.9512">FacadeSGB</text><rect fill="#FEFECE" height="31.0146" style="stroke:#A80036;stroke-width:1.5;" width="30" x="631.5" y="40.876"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="16" x="638.5" y="61.9512">cq</text><polygon fill="#A80036" points="247,103.6899,257,107.6899,247,111.6899" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="0" x2="253" y1="107.6899" y2="107.6899"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="235" x="12" y="102.9604">getGroupeCoursSGB(token : String)</text><path d="M264,87.8906 L264,112.8906 L392,112.8906 L392,97.8906 L382,87.8906 L264,87.8906 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M382,87.8906 L382,97.8906 L392,97.8906 L382,87.8906 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="107" x="270" y="105.9604">selon Contrôleur</text><line style="stroke:#A80036;stroke-width:1.0;" x1="646.5" x2="688.5" y1="140.4893" y2="140.4893"/><line style="stroke:#A80036;stroke-width:1.0;" x1="688.5" x2="688.5" y1="140.4893" y2="153.4893"/><line style="stroke:#A80036;stroke-width:1.0;" x1="647.5" x2="688.5" y1="153.4893" y2="153.4893"/><polygon fill="#A80036" points="657.5,149.4893,647.5,153.4893,657.5,157.4893" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="310" x="653.5" y="135.7598">recupererEnseignantAvecToken(token : string)</text><path d="M975,127.1899 L975,152.1899 L1196,152.1899 L1196,137.1899 L1186,127.1899 L975,127.1899 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1186,127.1899 L1186,137.1899 L1196,137.1899 L1186,127.1899 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="200" x="981" y="145.2598">etape de verification de token</text><polygon fill="#A80036" points="563,198.0879,573,202.0879,563,206.0879" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="259" x2="569" y1="202.0879" y2="202.0879"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="292" x="271" y="197.3584">getListeSchedulesEnseignant(enseignant.id)</text><path d="M580,166.4893 L580,223.4893 L764,223.4893 L764,176.4893 L754,166.4893 L580,166.4893 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M754,166.4893 L754,176.4893 L764,176.4893 L754,166.4893 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="81" x="586" y="184.5591">selon Expert</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="127" x="586" y="200.3584">FacadeSGB accède</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="163" x="586" y="216.1577">aux GroupeCours du SGB</text><polygon fill="#A80036" points="270,246.6865,260,250.6865,270,254.6865" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="264" x2="574" y1="250.6865" y2="250.6865"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="95" x="369.5" y="245.957">[GroupeCours]</text><!--MD5=[950281e1a3bf6acf5791d65ebef59df0]
+@startuml RDCU
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title RDCU getGroupeCoursSGB(token : String)
+
+participant "ControleurCours" as cc
+participant "FacadeSGB" as sgb
+
+->cc : getGroupeCoursSGB(token : String)
+note right : selon Contrôleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+cc->sgb : getListeSchedulesEnseignant(enseignant.id)
+note right : selon Expert\nFacadeSGB accède\naux GroupeCours du SGB
+cc<- -sgb : [GroupeCours]
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 11:46:50 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: CA
+--></g></svg>

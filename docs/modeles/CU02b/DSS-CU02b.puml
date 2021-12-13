@@ -1,0 +1,12 @@
+@startuml DSS
+skinparam style strictuml
+hide empty members
+title DSS CU02b - Récupérer question
+
+actor ":Enseignant" as e 
+participant ":Systeme" as s 
+e -> s : postCoursSelectionne(null , token : string)
+note right : même fonction\nque dans CU02a
+e<<-- s : liste des questions de l'enseignant
+note left : dans UI : selectionne la question\net affiche son détail
+@enduml

@@ -1,0 +1,13 @@
+getListeNomsCours(enseignant : string)
+postcondition:
+-Aucune
+
+postCoursSelectionneDevoir(cours : string, token : string)
+postcondition:
+-Aucune
+
+
+createDevoir(cours : Cours, nom : string, description : string, noteMaximale : int,\n dateDebut : string, dateFin : string, etatVisible: boolean, token : string)
+postcondition:
+-Une instance d de Devoir a été créé
+-Le Cours cours est associé au Devoir d

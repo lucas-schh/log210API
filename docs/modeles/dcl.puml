@@ -1,0 +1,145 @@
+@startuml DCL
+skinparam style strictuml
+hide empty members
+title Diagramme de classe logicielle
+
+class ControleurCours {
+recupererEnseignantAvecToken(token:String) : Enseignant\n
+getInfoGroupeCours(group_id:String, token:String) : Cours\n
+getGroupeCours(token:String) : String[]\n
+getCoursUtilisateur(token:String) : Map<String, Cours>\n
+recupererEtudiantsGroupeCours(group_id:String, token:String) : Etudiant[]\n
+addCours(group_id:String, listeEtudiants:String[], token:String) : void\n
+deleteCoursChoisi(group_id:String, token:String) : Map<String,Cours>
+}
+
+class ControleurDevoir {
+recupererEnseignantAvecToken(token:String) : Enseignant\n
+postCoursSelectionne(group_id:String, token:String) : Map<String, Devoir>\n
+addDevoir(group_id:String) : void
+}
+class ControleurEnseignant {
+recupererEnseignantAvecToken(token:String) : Enseignant\n
+authEnseignant(email:String, password:String) : Enseignant
+}
+class ControleurQuestion {
+recupererEnseignantAvecToken(token:String) : Enseignant\n
+postCoursSelectionne(group_id:String, token:String) : Question[]\n
+setQuestion(group_id:String, type:String, tags:String, nom:String, \nenonce:String, verite:boolean, retroaction_reponse_vrai:String, \nretroaction_reponse_fausse:String, token:String) : void\n
+modifierQuestion(questionOriginale:String, type:String, tags:String, \nnom:String, enonce:String, verite:boolean, retroaction_reponse_vrai:String, \nretroaction_reponse_fausse:String, token:String) : void\n
+supprimerQuestion(nomQuestion:String, token:String) : void
+}
+class ControleurQuestionnaire {
+recupererEnseignantAvecToken(token:String) : Enseignant\n
+postCoursSelectionne(group_id:String, token:String) : Map<String, Questionnaire>\n
+createQuestionnaire(group_id:String, nom:String, \ndescription:String, etatActif:boolean, token:String) : String\n
+postTypeQuestion(group_id:String, typeSelectionne:String, token:String) : Question[]\n
+addQuestion(group_id:String, listeQuestions:String[], \nquestionnaire:String, token:String) : String\n
+postQuestionnaireSelectionne(group_id:String, \nquestionnaireSelectionne:String, token:String) : Questionnaire\n
+modifierQuestionnaire(group_id:String, nomQuestionnaire:String, \nnouveauNomQuestionnaire:String, nouvelleDescriptionQuestionnaire:String, \nnouveauEtatActif:boolean, nouvelleListeQuestion:Question[], token:String) : String\n
+supprimerQuestionnaire(group_id:String, nomQuestionnaire:String, token:String)
+}
+
+class Universite {
+
+
+  ajoutEnseignant(enseignant:Enseignant) : void\n
+  getListeGroupCours(enseignant:Enseignant) : Map<String,Cours>
+}
+note top of Universite
+Expert GRASP
+end note
+
+class Cours {
+  id : String
+  titre : String
+  prealables : String
+  enseignant : Enseignant
+  listeEtudiants : Etudiant[]
+  day : String
+  hours : String
+  activity : String 
+  mode : String 
+  local : String 
+  teacher_id : String 
+
+  addQuestion(type:String, nom:String, enonce:String, \nverite:boolean, retroaction_reponse_vrai:String, \nretroaction_reponse_fausse:String) : void\n
+  addEtudiant(etudiant:Etudiant) : void\n
+  createQuestionnaire(nom:String, description:String, \netatActif:boolean) : String
+}
+
+class Etudiant {
+  id : String
+
+}
+
+class Enseignant {
+  nom : String
+  prenom : String
+  id : String
+  token : String
+  listeCours : Map<String, Cours>
+
+  ajoutCours(cours:Cours) : void\n
+  addQuestion(group_id:String, listeQuestions:String[], \nquestionnaire:String) : void\n
+  ajoutDevoir(group_id:String, devoir:Devoir)
+}
+
+class Question {
+  nom : String
+  type : String
+  tags : String
+  énoncé : String
+  vérité : bool 
+  rétroaction_reponse_vrai : String
+  rétroaction_reponse_fausse : String
+  nombreQuestionnaire : number
+  etudiants : Map<number, Etudiants>
+
+  augmenteNbQuestionnaire() : void 
+  diminueNbQuestionnaire() : void
+}
+
+class Questionnaire {
+  nom : String
+  description : String
+  etatActif : boolean
+  listeEtudiant : Map<number, Etudiant>
+
+  addQuestion(question:Question) : void
+  addListeQuestion(questions:Question[]) : void
+}
+
+class Devoir <<Objets physiques>>{
+  nom : String
+  description : String
+  noteMaximale : double
+  dateDebut : DateTime
+  dateFin : DateTime
+  etatVisible : boolean
+}
+
+class SGB <<Facade>> {
+
+}
+
+Etudiant "*" -- "1" Cours : > a
+Enseignant "1" -- "1..*" Cours : > enseigne
+ControleurCours "1" -> "1" Universite : > contient
+Cours "1" -> "*" Question : > contient
+Cours "1" -right- "*" Devoir : > contient
+Cours "1" -- "*" Questionnaire : > contient
+Questionnaire "1" -- "1..*" Question : > contient
+ControleurCours -down-> SGB : > prend les informations de
+Universite "1" -down-> "*" Etudiant : > contient
+Universite "1" -down-> "*" Enseignant : > contient
+Universite "1" <-down- "1" ControleurEnseignant : < s'authentifie avec
+Universite "1" <-down- "1" ControleurDevoir : < s'authentifie avec
+Universite "1" <-down- "1" ControleurQuestion : < s'authentifie avec
+Universite "1" <-down- "1" ControleurQuestionnaire : < s'authentifie avec
+ControleurEnseignant "1" -down-> "*" Enseignant : > manipule
+ControleurDevoir "1" -down-> "*" Devoir : > manipule
+ControleurQuestion "1"-down-> "*" Question : >manipule
+ControleurQuestionnaire "1"-down-> "*" Questionnaire : >manipule
+
+@enduml

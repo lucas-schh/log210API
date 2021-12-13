@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="571px" preserveAspectRatio="none" style="width:1071px;height:571px;background:#FFFFFF;" version="1.1" viewBox="0 0 1071 571" width="1071px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Verdana" font-size="18" lengthAdjust="spacing" textLength="250" x="409.5" y="28.708">RDCU CU02d - getQuestion</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="369.5" x2="369.5" y1="87.5469" y2="564.8047"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="528" x2="528" y1="87.5469" y2="564.8047"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="658" x2="658" y1="87.5469" y2="564.8047"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="793" x2="793" y1="87.5469" y2="564.8047"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="941" x2="941" y1="87.5469" y2="564.8047"/><rect fill="#FEFECE" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="91" x="324.5" y="56.25"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="77" x="331.5" y="76.2451">Controleur</text><rect fill="#FEFECE" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="86" x="485" y="56.25"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="72" x="492" y="76.2451">Universite</text><rect fill="#FEFECE" height="46.5938" style="stroke:#A80036;stroke-width:1.5;" width="154" x="581" y="39.9531"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="45" x="635.5" y="59.9482">Cours:</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="140" x="588" y="76.2451">Map&lt;String,Cours&gt;</text><rect fill="#FEFECE" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="97" x="745" y="56.25"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="83" x="752" y="76.2451">cours:Cours</text><rect fill="#FEFECE" height="46.5938" style="stroke:#A80036;stroke-width:1.5;" width="178" x="852" y="39.9531"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="69" x="906.5" y="59.9482">Question:</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="164" x="859" y="76.2451">Map&lt;String,Question&gt;</text><polygon fill="#A80036" points="358,114.6797,368,118.6797,358,122.6797" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="0" x2="364" y1="118.6797" y2="118.6797"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="346" x="12" y="113.6138">getQuestion(nomCours : string, nomQuestion : string)</text><path d="M375,131.6797 L375,156.6797 L501,156.6797 L501,141.6797 L491,131.6797 L375,131.6797 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M491,131.6797 L491,141.6797 L501,141.6797 L491,131.6797 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="105" x="381" y="148.7466">selon Controleur</text><polygon fill="#A80036" points="516,178.9453,526,182.9453,516,186.9453" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="370" x2="522" y1="182.9453" y2="182.9453"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="134" x="382" y="177.8794">getCours(nomCours)</text><polygon fill="#A80036" points="646,208.0781,656,212.0781,646,216.0781" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="528" x2="652" y1="212.0781" y2="212.0781"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="97" x="544.5" y="207.0122">get(nomCours)</text><path d="M663,225.0781 L663,280.0781 L808,280.0781 L808,235.0781 L798,225.0781 L663,225.0781 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M798,225.0781 L798,235.0781 L808,235.0781 L798,225.0781 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="80" x="669" y="242.145">selon Expert</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="120" x="669" y="257.2778">Universite contient</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="57" x="669" y="272.4106">les cours</text><line style="stroke:#A80036;stroke-width:1.0;" x1="528" x2="538" y1="306.6094" y2="302.6094"/><line style="stroke:#A80036;stroke-width:1.0;" x1="528" x2="538" y1="306.6094" y2="310.6094"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="528" x2="657" y1="306.6094" y2="306.6094"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="37" x="574.5" y="301.5435">Cours</text><line style="stroke:#A80036;stroke-width:1.0;" x1="370" x2="380" y1="335.7422" y2="331.7422"/><line style="stroke:#A80036;stroke-width:1.0;" x1="370" x2="380" y1="335.7422" y2="339.7422"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="370" x2="527" y1="335.7422" y2="335.7422"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="37" x="430.5" y="330.6763">Cours</text><polygon fill="#A80036" points="781.5,360.875,791.5,364.875,781.5,368.875" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="370" x2="787.5" y1="364.875" y2="364.875"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="174" x="494.75" y="359.8091">getQuestion(nomQuestion)</text><polygon fill="#A80036" points="929,390.0078,939,394.0078,929,398.0078" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="793.5" x2="935" y1="394.0078" y2="394.0078"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="117" x="808.75" y="388.9419">get(nomQuestion)</text><path d="M946,407.0078 L946,462.0078 L1064,462.0078 L1064,417.0078 L1054,407.0078 L946,407.0078 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1054,407.0078 L1054,417.0078 L1064,417.0078 L1054,407.0078 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="80" x="952" y="424.0747">selon Expert</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="93" x="952" y="439.2075">Cours contient</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="84" x="952" y="454.3403">les questions</text><line style="stroke:#A80036;stroke-width:1.0;" x1="793.5" x2="803.5" y1="488.5391" y2="484.5391"/><line style="stroke:#A80036;stroke-width:1.0;" x1="793.5" x2="803.5" y1="488.5391" y2="492.5391"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="793.5" x2="940" y1="488.5391" y2="488.5391"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="57" x="838.75" y="483.4731">Question</text><line style="stroke:#A80036;stroke-width:1.0;" x1="370" x2="380" y1="517.6719" y2="513.6719"/><line style="stroke:#A80036;stroke-width:1.0;" x1="370" x2="380" y1="517.6719" y2="521.6719"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="370" x2="792.5" y1="517.6719" y2="517.6719"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="57" x="553.25" y="512.606">Question</text><polygon fill="#A80036" points="11,542.8047,1,546.8047,11,550.8047" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="5" x2="369" y1="546.8047" y2="546.8047"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="57" x="156.5" y="541.7388">Question</text><!--MD5=[8198d950600c3765c7e81166725b8c70]
+@startuml
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title RDCU CU02d - getQuestion
+
+participant "Controleur" as rc
+participant "Universite" as u
+participant "Cours:\nMap<String,Cours>" as cm
+participant "cours:Cours" as c
+participant "Question:\nMap<String,Question>" as qm
+
+[-> rc : getQuestion(nomCours : string, nomQuestion : string)
+note right of rc
+selon Controleur
+end note
+rc -> u : getCours(nomCours)
+u -> cm : get(nomCours)
+note right of cm
+selon Expert
+Universite contient 
+les cours
+end note
+u <<- - cm : Cours
+rc <<- - u : Cours
+rc -> c : getQuestion(nomQuestion)
+c -> qm : get(nomQuestion)
+note right of qm
+selon Expert
+Cours contient 
+les questions
+end note
+c <<- - qm : Question
+rc <<- - c : Question
+[<- rc : Question
+@enduml
+
+PlantUML version 1.2021.14beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

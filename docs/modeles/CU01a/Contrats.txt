@@ -1,0 +1,17 @@
+getGroupeCoursSGB(token : String)
+postcondition:
+-Aucune
+
+getInfoGroupeCours(group_id : string, token : string)
+postcondition:
+-Aucune
+
+recupererEtudiantsGroupeCours(group_id : string, token : string)
+postcondition:
+-Aucune
+
+addCours(group_id : string, listeEtudiants : string[], token : string)
+postcondition:
+-Une instance gc de Cours a été créé
+-L'enseignant enseignant (utilisateur) est associé au cours gc
+-Les étudiants etudiant[] inscrits dans le groupe-cours(SGB) sont associés au cours gc

@@ -1,0 +1,22 @@
+@startuml RDCU CU01b
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title RDCU CU01b
+
+
+participant "ControleurCours" as c
+participant "enseignant:Enseignant" as e
+
+
+->c : getCoursUtilisateur(token : string)
+note right : selon Controleur
+cq->cq : recupererEnseignantAvecToken(token : string)
+note right : etape de verification de token
+c->e : getlisteCours()
+note right : selon Expert\nControleurCours a accès\nà l'utilisateur
+e-->>c : [Cours]
+@enduml 

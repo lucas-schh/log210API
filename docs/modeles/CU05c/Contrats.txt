@@ -1,0 +1,7 @@
+postQuestionnaireSelectionne(group_id : String, questionnaireSelectionne : String, token : string)
+postcondition:
+-Aucune
+
+modifierQuestionnaire(group_id : string, nomQuestionnaire : string, nouveauNomQuestionnaire : string, ... (autres paramètres))
+postcondition:
+-Les attributs du questionnaire q sont modifiés avec les nouveaux paramètres de l'opération

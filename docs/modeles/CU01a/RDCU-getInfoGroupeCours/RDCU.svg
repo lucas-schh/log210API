@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="270px" preserveAspectRatio="none" style="width:712px;height:270px;background:#FFFFFF;" version="1.1" viewBox="0 0 712 270" width="712px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Verdana" font-size="18" lengthAdjust="spacing" textLength="543" x="86" y="30.0967">RDCU getInfoGroupeCours(group_id : string, token : string)</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="375.5" x2="375.5" y1="72.8906" y2="263.4858"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="515.5" x2="515.5" y1="72.8906" y2="263.4858"/><rect fill="#FEFECE" height="31.0146" style="stroke:#A80036;stroke-width:1.5;" width="131" x="310.5" y="40.876"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="117" x="317.5" y="61.9512">ControleurCours</text><rect fill="#FEFECE" height="31.0146" style="stroke:#A80036;stroke-width:1.5;" width="93" x="469.5" y="40.876"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="476.5" y="61.9512">FacadeSGB</text><polygon fill="#A80036" points="364,103.6899,374,107.6899,364,111.6899" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="0" x2="370" y1="107.6899" y2="107.6899"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="352" x="12" y="102.9604">getInfoGroupeCours(group_id : string, token : string)</text><path d="M381,87.8906 L381,112.8906 L509,112.8906 L509,97.8906 L499,87.8906 L381,87.8906 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M499,87.8906 L499,97.8906 L509,97.8906 L499,87.8906 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="107" x="387" y="105.9604">selon Contrôleur</text><polygon fill="#A80036" points="504,155.2886,514,159.2886,504,163.2886" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="376" x2="510" y1="159.2886" y2="159.2886"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="102" x="395" y="154.5591">getListeCours()</text><path d="M521,123.6899 L521,180.6899 L705,180.6899 L705,133.6899 L695,123.6899 L521,123.6899 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M695,123.6899 L695,133.6899 L705,133.6899 L695,123.6899 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="81" x="527" y="141.7598">selon Expert</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="127" x="527" y="157.5591">FacadeSGB accède</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="163" x="527" y="173.3584">aux GroupeCours du SGB</text><line style="stroke:#A80036;stroke-width:1.0;" x1="376" x2="386" y1="226.6865" y2="222.6865"/><line style="stroke:#A80036;stroke-width:1.0;" x1="376" x2="386" y1="226.6865" y2="230.6865"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="376" x2="515" y1="226.6865" y2="226.6865"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="116" x="388" y="221.957">allCours : [Cours]</text><path d="M146,191.0879 L146,248.0879 L371,248.0879 L371,201.0879 L361,191.0879 L146,191.0879 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M361,191.0879 L361,201.0879 L371,201.0879 L361,191.0879 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="155" x="152" y="209.1577">parcours tous les cours</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="204" x="152" y="224.957">et renvoie celui qui correspond</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="77" x="152" y="240.7563">au group_id</text><!--MD5=[e2140cb2ccd619b33b1078d1a8b816bd]
+@startuml RDCU
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title RDCU getInfoGroupeCours(group_id : string, token : string)
+
+participant "ControleurCours" as cc
+participant "FacadeSGB" as sgb
+
+->cc : getInfoGroupeCours(group_id : string, token : string)
+note right : selon Contrôleur
+cc->sgb : getListeCours()
+note right : selon Expert\nFacadeSGB accède\naux GroupeCours du SGB
+cc<<- -sgb : allCours : [Cours]
+note left : parcours tous les cours\net renvoie celui qui correspond\nau group_id
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 11:46:50 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: CA
+--></g></svg>

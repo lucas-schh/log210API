@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="402px" preserveAspectRatio="none" style="width:566px;height:402px;background:#FFFFFF;" version="1.1" viewBox="0 0 566 402" width="566px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Verdana" font-size="18" lengthAdjust="spacing" textLength="243" x="161.25" y="30.0967">DSS CU01a - Ajouter cours</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="50" x2="50" y1="120.8906" y2="395.0845"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="519.5" x2="519.5" y1="120.8906" y2="395.0845"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="84" x="5" y="117.9512">:Enseignant</text><ellipse cx="50" cy="50.876" fill="#FEFECE" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M50,58.876 L50,85.876 M37,66.876 L63,66.876 M50,85.876 L37,100.876 M50,85.876 L63,100.876 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" height="31.0146" style="stroke:#A80036;stroke-width:1.5;" width="81" x="479.5" y="88.876"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="67" x="486.5" y="109.9512">:Système</text><polygon fill="#A80036" points="508,148.6899,518,152.6899,508,156.6899" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="514" y1="152.6899" y2="152.6899"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="233" x="168.5" y="147.9604">getGroupeCoursSGB(token : string)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="198.2886" y2="194.2886"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="198.2886" y2="202.2886"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="50" x2="519" y1="198.2886" y2="198.2886"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="221" x="174.5" y="177.7598">affiche la liste des groupes-cours</text><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="160" x="205" y="193.5591">qu'enseigne l'enseignant</text><polygon fill="#A80036" points="508,224.0879,518,228.0879,508,232.0879" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="514" y1="228.0879" y2="228.0879"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="352" x="109" y="223.3584">getInfoGroupeCours(group_id : string, token : string)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="257.8872" y2="253.8872"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="257.8872" y2="261.8872"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="50" x2="519" y1="257.8872" y2="257.8872"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="142" x="214" y="253.1577">informations du cours</text><polygon fill="#A80036" points="508,283.6865,518,287.6865,508,291.6865" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="514" y1="287.6865" y2="287.6865"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="429" x="70.5" y="282.957">recupererEtudiantsGroupeCours(group_id : string, token : string)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="317.4858" y2="313.4858"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="317.4858" y2="321.4858"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="50" x2="519" y1="317.4858" y2="317.4858"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="302" x="134" y="312.7563">liste d'étudiants inscrits dans le groupe-cours</text><polygon fill="#A80036" points="508,343.2852,518,347.2852,508,351.2852" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="514" y1="347.2852" y2="347.2852"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="446" x="62" y="342.5557">addCours(group_id : string, listeEtudiants : string[], token : string)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="377.0845" y2="373.0845"/><line style="stroke:#A80036;stroke-width:1.0;" x1="50" x2="60" y1="377.0845" y2="381.0845"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="50" x2="519" y1="377.0845" y2="377.0845"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="81" x="244.5" y="372.355">"Cours créé"</text><!--MD5=[c06374b6f421bc17e152bc6e1db32d75]
+@startuml DSS
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+hide empty members
+title DSS CU01a - Ajouter cours
+
+actor ":Enseignant" as e
+participant ":Système" as s
+
+e->s : getGroupeCoursSGB(token : string)
+e<<- -s : affiche la liste des groupes-cours\nqu'enseigne l'enseignant
+e->s : getInfoGroupeCours(group_id : string, token : string)
+e<<- -s : informations du cours
+e->s : recupererEtudiantsGroupeCours(group_id : string, token : string)
+e<<- -s : liste d'étudiants inscrits dans le groupe-cours
+e->s : addCours(group_id : string, listeEtudiants : string[], token : string)
+e<<- -s : "Cours créé"
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 11:46:50 EST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: fr
+Country: CA
+--></g></svg>
